@@ -5,12 +5,7 @@ import React from 'react';
 
 function OHIFLogo() {
   return (
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="header-brand"
-      href="http://ohif.org"
-    >
+    <a className="header-brand" href="/">
       <Icon name="ohif-logo" className="header-logo-image" />
       {/* Logo text would fit smaller displays at two lines:
        *
