@@ -252,6 +252,9 @@ function StudyListRoute(props) {
           // Rows
           studies={studies}
           onSelectItem={studyInstanceUID => {
+            //var link = 'http://localhost/VIEWER/?subjectId=XNAT_S00001&projectId=1'
+            //var link = 'http://localhost/VIEWER/?subjectId=XNAT2_S00001&projectId=1'
+            //window.open(link);
             const viewerPath = RoutesUtil.parseViewerPath(appConfig, server, {
               studyInstanceUIDs: studyInstanceUID,
             });
@@ -433,7 +436,7 @@ function _sortStudies(studies, field, order) {
   });
 
   // Sort by field
-  sortedStudies.sort(function(a, b) {
+  sortedStudies.sort(function (a, b) {
     let fieldA = a[field];
     let fieldB = b[field];
     if (field === 'StudyDate') {

@@ -5,7 +5,7 @@ import user from '../../user';
 import getImageAttributes from '../lib/getImageAttributes';
 import getLabel from '../lib/getLabel';
 
-export default function({ eventData, tool, toolGroupId, toolGroup }) {
+export default function ({ eventData, tool, toolGroupId, toolGroup }) {
   const measurementApi = MeasurementApi.Instance;
   if (!measurementApi) {
     log.warn('Measurement API is not initialized');

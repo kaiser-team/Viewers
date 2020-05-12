@@ -6,7 +6,7 @@ export function initCornerstoneToolsAliases() {
   cy.get('[data-cy="pan"]').as('panBtn');
   cy.get('[data-cy="length"]').as('lengthBtn');
   cy.get('[data-cy="annotate"]').as('annotateBtn');
-  cy.get('[data-cy="angle"]').as('angleBtn');
+
   cy.get('[data-cy="reset"]').as('resetBtn');
   cy.get('[data-cy="cine"]').as('cineBtn');
   cy.get('[data-cy="more"]').as('moreBtn');

@@ -44,6 +44,75 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'StackScroll' },
   },
+
+  {
+    id: 'FreehandRoi',
+    label: 'FreehandRoi',
+    icon: 'search-plus',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'FreehandRoi' },
+  },
+
+  {
+    id: 'CobbAngle',
+    label: 'CobbAngle',
+    icon: 'search-plus',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'CobbAngle' },
+  },
+
+  {
+    id: 'Probe',
+    label: 'Probe',
+    icon: 'search-plus',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Probe' },
+  },
+
+  {
+    id: 'Brush',
+    label: 'Brush',
+    icon: 'brush',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Brush' },
+  },
+
+  {
+    id: 'BrushEraser',
+    label: 'Brush Eraser',
+    icon: 'trash',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'BrushEraser' },
+  },
+
+  {
+    id: 'CorrectionScissors',
+    label: 'Correction Scissors',
+    icon: 'scissors',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'CorrectionScissors' },
+  },
+  //{
+  //  id: 'BrushRadius',
+  //  label: 'BrushRadius',
+  //  icon: 'scissors',
+  //
+  //  type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+  //  commandName: 'setToolActive',
+  //  commandOptions: { toolName: 'BrushRadius' },
+  //},
   {
     id: 'Zoom',
     label: 'Zoom',
@@ -53,6 +122,7 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'Zoom' },
   },
+
   {
     id: 'Wwwc',
     label: 'Levels',
@@ -215,6 +285,18 @@ const definitions = [
         commandName: 'setToolActive',
         commandOptions: { toolName: 'Bidirectional' },
       },
+
+      {
+        id: 'Eraser',
+        label: 'Eraser',
+        icon: 'measure-target',
+        //
+        type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+        commandName: 'setToolActive',
+        commandOptions: { toolName: 'Eraser' },
+      },
+
+
       {
         id: 'Download',
         label: 'Download',

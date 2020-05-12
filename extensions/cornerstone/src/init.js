@@ -65,6 +65,11 @@ export default function init({ servicesManager, configuration }) {
       csTools.EllipticalRoiTool,
       csTools.DragProbeTool,
       csTools.RectangleRoiTool,
+      csTools.ProbeTool,
+      csTools.CobbAngleTool,
+      csTools.FreehandRoiTool,
+      csTools.CorrectionScissorsTool,
+      csTools.BrushTool,
     ],
     other: [
       csTools.PanTool,
@@ -75,6 +80,7 @@ export default function init({ servicesManager, configuration }) {
       csTools.StackScrollTool,
       csTools.StackScrollMouseWheelTool,
       csTools.OverlayTool,
+      csTools.EraserTool,
     ],
   };
 
@@ -153,13 +159,19 @@ export default function init({ servicesManager, configuration }) {
     }
   });
 
+
+
   csTools.setToolActive('Pan', { mouseButtonMask: 4 });
   csTools.setToolActive('Zoom', { mouseButtonMask: 2 });
   csTools.setToolActive('Wwwc', { mouseButtonMask: 1 });
+  csTools.setToolActive('Probe', { mouseButtonMask: 1 });
+  csTools.setToolActive('FreehandRoi', { mouseButtonMask: 1 });
+  csTools.setToolActive('CobbAngle', { mouseButtonMask: 1 });
   csTools.setToolActive('StackScrollMouseWheel', {}); // TODO: Empty options should not be required
   csTools.setToolActive('PanMultiTouch', { pointers: 2 }); // TODO: Better error if no options
   csTools.setToolActive('ZoomTouchPinch', {});
   csTools.setToolEnabled('Overlay', {});
+  csTools.setToolActive('Brush', { mouseButtonMask: 1 });
 }
 
 const _initMeasurementService = measurementService => {
@@ -189,6 +201,8 @@ const _initMeasurementService = measurementService => {
 
   return csToolsVer4MeasurementSource;
 };
+
+
 
 const _connectToolsToMeasurementService = measurementService => {
   const csToolsVer4MeasurementSource = _initMeasurementService(

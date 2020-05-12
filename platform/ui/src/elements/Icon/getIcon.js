@@ -91,7 +91,7 @@ import eyeClosed from './icons/eye-closed.svg';
 const ICONS = {
   eye,
   'eye-closed': eyeClosed,
-  brush,
+  'brush': brush,
   scissors,
   user,
   sort,

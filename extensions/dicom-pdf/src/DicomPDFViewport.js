@@ -245,14 +245,14 @@ class DicomPDFViewport extends Component {
             </div>
           </>
         ) : (
-          <object
-            aria-label="PDF Viewer"
-            data={fileURL}
-            type="application/pdf"
-            width="100%"
-            height="100%"
-          />
-        )}
+            <object
+              aria-label="PDF Viewer"
+              data={fileURL}
+              type="application/pdf"
+              width="100%"
+              height="100%"
+            />
+          )}
         {error && <h2>{JSON.stringify(error)}</h2>}
       </div>
     );

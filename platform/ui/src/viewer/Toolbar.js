@@ -97,6 +97,7 @@ function getDefaultButtonData() {
       className: 'imageViewerCommand',
       icon: 'trash',
     },
+
   ];
   return buttonData;
 }
