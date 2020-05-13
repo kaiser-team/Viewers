@@ -1,26 +1,26 @@
-//window.config = {
-// default: '/'
-// routerBasename: '/',
-// default: ''
-//showStudyList: true,
-//servers: {
-// dicomWeb: [
-// {
-// name: 'DCM4CHEE',
-// wadoUriRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/wado',
-// qidoRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/rs',
-// wadoRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/rs',
-// qidoSupportsIncludeField: true,
-// imageRendering: 'wadors',
-// thumbnailRendering: 'wadors',
-// requestOptions: {
-//   auth: 'admin:admin',
-//},
-//},
-// ],
-//},
-//studyListFunctionsEnabled: true,
-//};
+/*window.config = {
+  default: '/',
+  routerBasename: '/',
+  default: '',
+  showStudyList: true,
+  servers: {
+    dicomWeb: [
+      {
+        name: 'DCM4CHEE',
+        wadoUriRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/wado',
+        qidoRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoRoot: 'http://localhost:8080/dcm4chee-arc/aets/DCM4CHEE/rs',
+        qidoSupportsIncludeField: true,
+        imageRendering: 'wadors',
+        thumbnailRendering: 'wadors',
+        requestOptions: {
+          auth: 'admin:admin',
+        },
+      },
+    ],
+  },
+  studyListFunctionsEnabled: true,
+};*/
 
 
 
@@ -149,5 +149,5 @@ window.config = {
   //  requests as it extracts the metadata from raw files everytime,
   //  try setting this to even lower value
   // Leave it undefined for no limit, sutiable for HTTP/2 enabled servers
-  // maxConcurrentMetadataRequests: 5,
+  maxConcurrentMetadataRequests: 5,
 };

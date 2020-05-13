@@ -36,33 +36,29 @@ const enums = {
 
 const definitions = [
   {
-    id: 'StackScroll',
-    label: 'Stack Scroll',
-    icon: 'bars',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'StackScroll' },
-  },
-
-  {
-    id: 'FreehandRoi',
-    label: 'FreehandRoi',
-    icon: 'search-plus',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'FreehandRoi' },
-  },
-
-  {
-    id: 'CobbAngle',
-    label: 'CobbAngle',
-    icon: 'search-plus',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'CobbAngle' },
+    id: 'ROI',
+    label: 'ROI',
+    icon: 'liver',
+    buttons: [
+      {
+        id: 'FreehandRoi',
+        label: 'FreehandRoi',
+        icon: 'brush',
+        //
+        type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+        commandName: 'setToolActive',
+        commandOptions: { toolName: 'FreehandRoi' },
+      },
+      {
+        id: 'CobbAngle',
+        label: 'CobbAngle',
+        icon: 'search-plus',
+        //
+        type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+        commandName: 'setToolActive',
+        commandOptions: { toolName: 'CobbAngle' },
+      },
+    ]
   },
 
   {
@@ -76,43 +72,14 @@ const definitions = [
   },
 
   {
-    id: 'Brush',
-    label: 'Brush',
-    icon: 'brush',
+    id: 'StackScroll',
+    label: 'Stack Scroll',
+    icon: 'bars',
     //
     type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
     commandName: 'setToolActive',
-    commandOptions: { toolName: 'Brush' },
+    commandOptions: { toolName: 'StackScroll' },
   },
-
-  {
-    id: 'BrushEraser',
-    label: 'Brush Eraser',
-    icon: 'trash',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'BrushEraser' },
-  },
-
-  {
-    id: 'CorrectionScissors',
-    label: 'Correction Scissors',
-    icon: 'scissors',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'CorrectionScissors' },
-  },
-  //{
-  //  id: 'BrushRadius',
-  //  label: 'BrushRadius',
-  //  icon: 'scissors',
-  //
-  //  type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-  //  commandName: 'setToolActive',
-  //  commandOptions: { toolName: 'BrushRadius' },
-  //},
   {
     id: 'Zoom',
     label: 'Zoom',
